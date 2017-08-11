@@ -1,0 +1,5 @@
+salt-formula-hubblestack (2017.8) xenial; urgency=medium
+
+  * Initial release
+
+ -- Petr Michalec epcim@apealive.net  Thu, 10 Aug 2017 06:03:05 BST

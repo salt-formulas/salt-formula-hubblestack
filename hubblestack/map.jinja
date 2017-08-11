@@ -1,0 +1,18 @@
+{%- load_yaml as base_defaults %}
+
+#Debian:
+#  pkgs:
+#  - hubblestack
+
+# does not work here
+hubblestack:
+  nova:
+    saltenv: base
+    module_dir: salt://hubblestack/hubblestack_nova
+    profile_dir: salt://hubblestack/hubblestack_nova_profiles
+
+{%- endload %}
+
+{%- set nova = salt['grains.filter_by'](base_defaults, merge=salt['pillar.get']('hubblestack:nova')) %}
+{%- set pulsar = salt['grains.filter_by'](base_defaults, merge=salt['pillar.get']('hubblestack:pulsar')) %}
+{%- set nebula = salt['grains.filter_by'](base_defaults, merge=salt['pillar.get']('hubblestack:nebula')) %}

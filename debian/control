@@ -1,0 +1,15 @@
+Source: salt-formula-hubblestack
+Maintainer: Petr Michalec epcim@apealive.net
+Section: admin
+Priority: optional
+Build-Depends: debhelper (>= 9), salt-master, python, python-yaml
+Standards-Version: 3.9.6
+Homepage: https://github.com/salt-formulas
+Vcs-Browser: https://github.com/salt-formulas/salt-formula-hubblestack
+Vcs-Git: https://github.com/salt-formulas/salt-formula-hubblestack.git
+
+Package: salt-formula-hubblestack
+Architecture: all
+Depends: ${misc:Depends}, salt-master, reclass
+Description: hubblestack salt formula
+ Install and configure hubblestack system.

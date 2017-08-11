@@ -1,0 +1,6 @@
+[submodule "hubblestack/upstream"]
+	path = hubblestack/upstream
+	url = https://github.com/hubblestack/hubble-salt
+[submodule "hubble/upstream"]
+	path = hubble/upstream
+	url = https://github.com/hubblestack/hubble-salt
