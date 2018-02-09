@@ -10,6 +10,6 @@ Vcs-Git: https://github.com/salt-formulas/salt-formula-hubblestack.git
 
 Package: salt-formula-hubblestack
 Architecture: all
-Depends: ${misc:Depends}, salt-master, reclass
+Depends: ${misc:Depends}
 Description: hubblestack salt formula
  Install and configure hubblestack system.
